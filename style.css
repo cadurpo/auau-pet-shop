@@ -1,70 +1,119 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .top {
-    display: flex;
-    padding: 10px;    
-    background-color: #eda569;
-    color: white;
-    font-family: 'Poppins', Times, Serif;   
-            
-    justify-content: center;    
+  display: flex;
+  padding: 10px;
+  background-color: #eda569;
+  color: white;
+  font-family: "Poppins", Times, Serif;
+
+  justify-content: center;
 }
 
 .top ul {
-    display: flex;
-    list-style-type: none;            
+  display: flex;
+  list-style-type: none;
 }
 
 .top li {
-    margin: 0 25px;    
-    
+  margin: 0 25px;
 }
 
-
 .navbar {
-    display: flex;
-    align-items: center;
-    padding: 35px;
-    justify-content: space-evenly;
-    
+  display: flex;
+  align-items: center;
+  padding: 35px;
+  justify-content: space-evenly;
 }
 
 .navbar nav ul {
-    display: flex;
-    font-family: 'Poppins', Times, Serif;   
-    list-style-type: none;     
-    
-    
+  display: flex;
+  font-family: "Poppins", Times, Serif;
+  list-style-type: none;
 }
 
 .navbar nav a {
-    text-decoration: none;
-    margin-right: 50px;
-    color: #272727;    
-    padding: 7px;
-    transition: 0.3s ease all;
+  text-decoration: none;
+  margin-right: 50px;
+  color: #272727;
+  padding: 7px;
+  transition: 0.3s ease all;
 }
 
 .navbar nav a:hover {
-    background-color: #fcbd24;
-    color: white;
+  background-color: #fcbd24;
+  color: white;
 }
 
 .icons img {
-    margin-right: 25px;
-
+  margin-right: 25px;
 }
 
 .banner {
-    display: flex;
-    flex-direction: column;
-    background-image: url(./imgs/banner/full-banner.png);
-    background-size: auto;
-    height: 700px;
-    
+  display: flex;
+  flex-direction: column;
+  background-image: url(./imgs/banner/full-banner.png);
+  background-size: auto;
+  height: 700px;
 }
 
+.favorites {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", Times, Serif;
+  align-items: center;
+  padding: 20px;
+  margin: 30px 0;
+}
+
+.favorites h3 {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 5px;
+}
+
+.favorites p {
+  color: #777777;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+  margin: 30px 0;
+  justify-content: center;
+}
+
+.categories {
+  display: grid;
+}
+
+.col-3 {
+  padding: 12px;
+  font-family: "Poppins", Times, Serif;
+  text-align: center;    
+}
+
+.mini-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-01 {
+  margin-right: 25px;
+}
+
+.col-3 .product-name {
+  color: #777777;
+  font-size: 15px;  
+  text-align: center;
+  font-weight: 500;
+  justify-content: center;
+}
+.price {
+    display: flex;
+}
