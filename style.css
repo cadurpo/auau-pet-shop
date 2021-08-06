@@ -10,7 +10,6 @@
   background-color: #eda569;
   color: white;
   font-family: "Poppins", Times, Serif;
-
   justify-content: center;
 }
 
@@ -84,18 +83,12 @@
 
 .row {
   display: flex;
-  margin: 30px 0;
   justify-content: center;
 }
-
-.categories {
-  display: grid;
-}
-
 .col-3 {
   padding: 12px;
   font-family: "Poppins", Times, Serif;
-  text-align: center;    
+  text-align: center;
 }
 
 .mini-container {
@@ -109,11 +102,111 @@
 
 .col-3 .product-name {
   color: #777777;
-  font-size: 15px;  
-  text-align: center;
+  font-size: 15px;
   font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.img-rate {
+  margin-bottom: 7px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price p {
+  margin-right: 17px;
+  margin-bottom: 7px;
+}
+
+.price-main {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.price-old {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #777777;
+  font-weight: 500;
+}
+
+.buy-button {
+  margin-top: 15px;
+  padding: 12px 50px;
+  background-color: #ef6b00;
+  color: white;
+  border-style: none;
+  font-family: "Poppins", Times, Serif;
+  border-radius: 25px;
+  font-size: 15px;
+}
+
+.exclusives {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", Times, Serif;
+  align-items: center;
+  padding: 20px;
+  margin: 30px 0 0px 0;
+}
+
+.exclusives h3 {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 5px;
   justify-content: center;
 }
-.price {
+
+.exclusives span {
+  font-weight: 500;
+}
+
+/* --- botões do carrossel --- */
+.botoes-carousel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  
+}
+
+.botoes-carousel button {
+  padding: 3px 21px;
+  margin-right: 10px;
+  background-color: #efefef;
+  border-style: none;
+  margin-bottom: 10px;
+  
+}
+
+.botoes-carousel button:hover {
+  background-color: black;
+}
+
+/* --- produtos do carrossel (4 por vez) --- */
+
+.col-4 {
+  padding: 4px;
+  font-family: "Poppins", Times, Serif;
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-banner {
+    margin: 200px 0 150px 0;
     display: flex;
+    justify-content: center;    
+}
+
+.footer-banner img {
+    padding: 10px;
 }
