@@ -202,11 +202,77 @@
 }
 
 .footer-banner {
-    margin: 200px 0 150px 0;
+    margin: 170px 0 100px 0;
     display: flex;
     justify-content: center;    
 }
 
 .footer-banner img {
-    padding: 10px;
+    padding: 15px;
 }
+
+.best-sellers {
+    background-color: #F7F4F0;
+    
+}
+
+.top-sellers {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", Times, Serif;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.top-sellers h3 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 5px;
+    justify-content: center;
+}
+
+.botoes-best {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    
+  }
+  
+  .botoes-best button {
+    padding: 3px 21px;
+    margin-right: 10px;
+    background-color:white;
+    border-style: none;
+    margin-bottom: 10px;
+    
+  }
+  
+  .botoes-best button:hover {
+    background-color: black;
+  }
+
+  .footer-logo {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+  }
+
+  .container-footer {
+      display: flex;
+  }
+    
+  .institucional, .atendimento {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  .institucional, .atendimento ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+
+
