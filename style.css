@@ -1,24 +1,34 @@
+:root {
+    --laranja: #eda569;
+    --laranja-escuro: #ef6b00;
+    --amarelo: #fcbd24;
+    --cinza: #777777;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.top {
+body {
+  font-family: "Poppins", Times, Serif;
+}
+
+.top-nav {
   display: flex;
   padding: 10px;
-  background-color: #eda569;
+  background-color: var(--laranja);
   color: white;
-  font-family: "Poppins", Times, Serif;
   justify-content: center;
 }
 
-.top ul {
+.top-nav ul {
   display: flex;
   list-style-type: none;
 }
 
-.top li {
+.top-nav li {
   margin: 0 25px;
 }
 
@@ -31,7 +41,6 @@
 
 .navbar nav ul {
   display: flex;
-  font-family: "Poppins", Times, Serif;
   list-style-type: none;
 }
 
@@ -44,7 +53,7 @@
 }
 
 .navbar nav a:hover {
-  background-color: #fcbd24;
+  background-color: var(--amarelo);
   color: white;
 }
 
@@ -63,7 +72,6 @@
 .favorites {
   display: flex;
   flex-direction: column;
-  font-family: "Poppins", Times, Serif;
   align-items: center;
   padding: 20px;
   margin: 30px 0;
@@ -87,7 +95,6 @@
 }
 .col-3 {
   padding: 12px;
-  font-family: "Poppins", Times, Serif;
   text-align: center;
 }
 
@@ -142,7 +149,6 @@
   background-color: #ef6b00;
   color: white;
   border-style: none;
-  font-family: "Poppins", Times, Serif;
   border-radius: 25px;
   font-size: 15px;
 }
@@ -150,7 +156,6 @@
 .exclusives {
   display: flex;
   flex-direction: column;
-  font-family: "Poppins", Times, Serif;
   align-items: center;
   padding: 20px;
   margin: 30px 0 0px 0;
@@ -172,7 +177,6 @@
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
-  
 }
 
 .botoes-carousel button {
@@ -181,18 +185,14 @@
   background-color: #efefef;
   border-style: none;
   margin-bottom: 10px;
-  
 }
 
 .botoes-carousel button:hover {
   background-color: black;
 }
 
-/* --- produtos do carrossel (4 por vez) --- */
-
 .col-4 {
   padding: 4px;
-  font-family: "Poppins", Times, Serif;
   text-align: center;
 }
 
@@ -202,77 +202,108 @@
 }
 
 .footer-banner {
-    margin: 170px 0 100px 0;
-    display: flex;
-    justify-content: center;    
+  margin: 170px 0 100px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-banner img {
-    padding: 15px;
+  padding: 15px;
 }
 
 .best-sellers {
-    background-color: #F7F4F0;
-    
+  background-color: #f7f4f0;
 }
 
 .top-sellers {
-    display: flex;
-    flex-direction: column;
-    font-family: "Poppins", Times, Serif;
-    align-items: center;
-    padding: 20px;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10px;
 }
 
 .top-sellers h3 {
-    font-size: 30px;
-    font-weight: 400;
-    padding: 5px;
-    justify-content: center;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 5px;
+  justify-content: center;
 }
 
 .botoes-best {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-    
-  }
-  
-  .botoes-best button {
-    padding: 3px 21px;
-    margin-right: 10px;
-    background-color:white;
-    border-style: none;
-    margin-bottom: 10px;
-    
-  }
-  
-  .botoes-best button:hover {
-    background-color: black;
-  }
-
-  .footer-logo {
-      display: flex;
-      justify-content: center;
-      margin-top: 15px;
-  }
-
-  .container-footer {
-      display: flex;
-  }
-    
-  .institucional, .atendimento {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-  }
-
-  .institucional, .atendimento ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
+.botoes-best button {
+  padding: 3px 21px;
+  margin-right: 10px;
+  background-color: white;
+  border-style: none;
+  margin-bottom: 10px;
+}
 
+.botoes-best button:hover {
+  background-color: black;
+}
 
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.institucional,
+.atendimento,
+.confie {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.institucional ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.institucional p {
+  font-weight: 600;
+}
+
+.atendimento ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.atendimento p {
+  font-weight: 600;
+}
+
+.confie {
+  display: flex;
+  flex-direction: column;
+}
+
+.confie p {
+  font-weight: 600;
+}
+
+.container hr {
+  width: 50%;
+  margin: 0 25% 0 25%;
+}
+
+.footer-img {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
