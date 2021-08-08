@@ -6,54 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Au Au Pet Shop</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <script src="./script.js" defer></script>
+    <script src="./jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <!--top-->
-    <header>
-        <div class="container">
+      <div class="container">
+          <div class="modal-container" id="modal-container">
+              <div class="modal" id="modal">
+                  <button class="close-btn" id="close"><i class="fa fa-times"></i></button>
+                  <div class="modal-content">
+                        <div class="header">
+                            <h2 class="logo">Lorem Ipsum</h2>
+                            <p class="tagline">something big is coming</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <form>
+                            <input type="text" placeholder="subscribe to our newsletter">
+                            <button class="subscribe">subscribe</button>
+                        </form>
+                        <div class="social-media">
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-behance"></i>
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+    <header>        
             <div class="top-nav">
-                <ul>
-                    <li>Frete Grátis - <span>Acima R$ 299</span> - Sul e Sudeste</li>
-                    <li>|</li>
-                    <li>Não serviu? <strong>A primeira troca</strong> é grátis</li>
-                    <li>|</li>
-                    <li><strong>10%</strong> de desconto no boleto</li>
-                    <li>|</li>
-                    <li>Pague em até <strong> 10x sem juros</strong></li>
-                </ul>
+                <div class="container">
+                    <ul>
+                        <li>Frete Grátis - <span>Acima R$ 299</span> - Sul e Sudeste</li>
+                        <p>|</p>
+                        <li>Não serviu? <span>A primeira troca</span> é grátis</li>
+                        <p>|</p>
+                        <li><span>10%</span> de desconto no boleto</li>
+                        <p>|</p>
+                        <li>Pague em até <span> 10x sem juros</span></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </header>
-    <!--header navbar-->
-    <div class="navbar">
-      <div class="logo">
-        <img src="./imgs/header/logo.png" />
-      </div>
-
-      <nav>
-        <ul>
-          <li><a href="">Rações</a></li>
-          <li><a href="">Acessórios</a></li>
-          <li><a href="">Kits</a></li>
-          <li><a href="">Combos</a></li>
-          <li><a href="">Promoções</a></li>
-        </ul>
-      </nav>
-      <div class="icons">
-        <img src="./imgs/header/search.png" alt="" />
-        <img src="./imgs/header/wish.png" alt="" />
-        <img src="./imgs/header/cart.png" alt="" />
-      </div>
-    </div>
-
-    <!--main-->
+            <div class="navbar">
+                <div class="container">
+                    <div class="logo"></div>
+                        <img src="./imgs/header/logo.png"/>
+                        </div>                
+                        <nav>
+                            <ul>
+                                <li><a href="">Rações</a></li>
+                                <li><a href="">Acessórios</a></li>
+                                <li><a href="">Kits</a></li>
+                                <li><a href="">Combos</a></li>
+                                <li><a href="">Promoções</a></li>
+                            </ul>
+                        </nav>
+                        <div class="icons">
+                        <img src="./imgs/header/search.png" alt="" />
+                        <img src="./imgs/header/wish.png" alt="" />
+                        <img src="./imgs/header/cart.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>        
+    </header>    
     <main>
-      <!--banner-->
-      <div class="banner"></div>
+        <div class="baner">
+        <img class="full-banner" src="./imgs/banner/full-banner.png" alt="">
+        </div>
       <!--favorite items-->
       <div class="favorites">
         <h3>Os Nossos Queridinhos</h3>

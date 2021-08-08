@@ -1,0 +1,47 @@
+@media screen and (max-width: 770px) {
+    header .container {
+        display: flex;
+        flex-direction: column;        
+    }
+
+    header .top-nav .container ul {
+        font-size: 14px;
+    }
+
+    header .top-nav .container li {
+        margin: 0px 17px;
+    }
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+    }
+    
+    .favorites {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .img-01 {
+        margin-right: 0;
+    }
+
+    .exclusives {
+        margin: 0;
+
+    }
+
+    .footer-banner {
+        flex-direction: column;
+    }
+
+    
+
+}
