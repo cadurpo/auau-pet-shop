@@ -3,42 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Au Au Pet Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css">
-    <!--fonts-->
+    <link rel="stylesheet" href="./newsletter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
     <script src="./script.js" defer></script>
-    <script src="./jquery-3.6.0.min.js"></script>
+    <title>Au Au Pet Shop</title>
   </head>
-  <body>
-      <div class="container">
-          <div class="modal-container" id="modal-container">
-              <div class="modal" id="modal">
-                  <button class="close-btn" id="close"><i class="fa fa-times"></i></button>
-                  <div class="modal-content">
-                        <div class="header">
-                            <h2 class="logo">Lorem Ipsum</h2>
-                            <p class="tagline">something big is coming</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                        <form>
-                            <input type="text" placeholder="subscribe to our newsletter">
-                            <button class="subscribe">subscribe</button>
-                        </form>
-                        <div class="social-media">
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-behance"></i>
-                            <i class="fab fa-facebook"></i>
-                        </div>
-                  </div>
+
+  <body>     
+    <!-- modal popup newsletter -->
+    <div class="popup">
+      <div class="contentBox">
+          <div class="close"></div>
+          <div class="imgBx">
+          </div>            
+          <div class="content">
+              <div class="content-container">
+                  <h3>Nossa Newsletter</h3>
+                  <p>Cadastre-se e receba ofertas exclusivas</p>
+                  <form action="">
+                    <input type="email" placeholder="Email">
+                    <br>
+                    <button type="submit">Enviar</button>
+                  </form>                  
               </div>
           </div>
       </div>
+  </div>
 
 
 
@@ -71,19 +67,18 @@
                             </ul>
                         </nav>
                         <div class="icons">
-                        <img src="./imgs/header/search.png" alt="" />
-                        <img src="./imgs/header/wish.png" alt="" />
-                        <img src="./imgs/header/cart.png" alt="" />
+                          <img src="./imgs/header/search.png" alt="" />
+                          <img src="./imgs/header/wish.png" alt="" />
+                          <img src="./imgs/header/cart.png" alt="" />
                         </div>
                     </div>
                 </div>
             </div>        
     </header>    
     <main>
-        <div class="baner">
+        <div class="banner">
         <img class="full-banner" src="./imgs/banner/full-banner.png" alt="">
-        </div>
-      <!--favorite items-->
+        </div>      
       <div class="favorites">
         <h3>Os Nossos Queridinhos</h3>
         <p>Produtos escolhidos com carinho para você!</p>
@@ -93,11 +88,11 @@
         <div class="small-container">
           <div class="row">
             <div class="col-3 img-01">
-              <img src="./imgs/banner/side-banner-1.png" alt="" />
+              <img class="big-img" src="./imgs/banner/side-banner-1.png" alt="" />
             </div>
             <div class="mini-container">
               <div class="col-3">
-                <img src="./imgs/product/product-1.png" alt="" />
+                <img class="img-p1" src="./imgs/product/product-1.png" alt="" />
                 <div class="description">
                   <p class="product-name">Corrente com presilha em inox - 3m</p>
                   <img class="img-rate" src="./imgs/product/rate.png" alt="" />
@@ -108,7 +103,7 @@
                 </div>
               </div>
               <div class="col-3">
-                <img src="./imgs/product/product-2.png" alt="" />
+                <img class="img-p1" src="./imgs/product/product-2.png" alt="" />
                 <p class="product-name">Coleira cinta vintage</p>
                 <img class="img-rate" src="./imgs/product/rate.png" alt="" />
                 <div class="price">
@@ -126,7 +121,7 @@
         <div class="row">
           <div class="mini-container">
             <div class="col-3">
-              <img src="./imgs/product/product-1.png" alt="" />
+              <img class="img-p1" src="./imgs/product/product-1.png" alt="" />
               <div class="description">
                 <p class="product-name">Corrente com presilha em inox - 3m</p>
                 <img class="img-rate" src="./imgs/product/rate.png" alt="" />
@@ -137,7 +132,7 @@
               </div>
             </div>
             <div class="col-3">
-              <img src="./imgs/product/product-2.png" alt="" />
+              <img class="img-p1" src="./imgs/product/product-2.png" alt="" />
               <p class="product-name">Coleira cinta vintage</p>
               <img class="img-rate" src="./imgs/product/rate.png" alt="" />
               <div class="price">
@@ -148,7 +143,7 @@
             </div>
           </div>
           <div class="col-3">
-            <img src="./imgs/banner/side-banner-2.png" alt="" />
+            <img class="big-img" src="./imgs/banner/side-banner-2.png" alt="" />
           </div>
         </div>
       </div>
@@ -166,7 +161,7 @@
 
       <div class="carousel">
         <div class="col-4">
-          <img src="./imgs/product/product-1.png" alt="" />
+          <img class="img-p1" src="./imgs/product/product-1.png" alt="" />
           <div class="description">
             <p class="product-name">Corrente com presilha em inox - 3m</p>
             <img class="img-rate" src="./imgs/product/rate.png" alt="" />
@@ -177,7 +172,7 @@
           </div>
         </div>
         <div class="col-4">
-          <img src="./imgs/product/product-2.png" alt="" />
+          <img class="img-p1" src="./imgs/product/product-2.png" alt="" />
           <p class="product-name">Coleira cinta vintage</p>
           <img class="img-rate" src="./imgs/product/rate.png" alt="" />
           <div class="price">
@@ -187,7 +182,7 @@
           <button class="buy-button">COMPRAR</button>
         </div>
         <div class="col-4">
-          <img src="./imgs/product/product-1.png" alt="" />
+          <img class="img-p1" src="./imgs/product/product-1.png" alt="" />
           <div class="description">
             <p class="product-name">Corrente com presilha em inox - 3m</p>
             <img class="img-rate" src="./imgs/product/rate.png" alt="" />
@@ -198,7 +193,7 @@
           </div>
         </div>
         <div class="col-4">
-          <img src="./imgs/product/product-1.png" alt="" />
+          <img class="img-p1" src="./imgs/product/product-1.png" alt="" />
           <div class="description">
             <p class="product-name">Corrente com presilha em inox - 3m</p>
             <img class="img-rate" src="./imgs/product/rate.png" alt="" />

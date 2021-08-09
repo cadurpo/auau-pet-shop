@@ -1,47 +1,206 @@
-@media screen and (max-width: 770px) {
-    header .container {
-        display: flex;
-        flex-direction: column;        
-    }
+@media screen and (min-width: 320px) and (max-width: 424px) {
+  header .top-nav {
+    display: none;
+  }
 
-    header .top-nav .container ul {
-        font-size: 14px;
-    }
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
 
-    header .top-nav .container li {
-        margin: 0px 17px;
-    }
+  .navbar nav a {
+    margin-right: 5px;
+  }
 
-    .navbar {
-        padding: 20px;
-    }
+  .navbar nav ul {
+    flex-direction: column;
+  }
 
-    .navbar nav ul {
-        flex-direction: column;
-    }
-    
-    .favorites {
-        padding: 10px;
-        margin: 10px 0;
-    }
+  .col-3 .img-p1 {
+    width: 100%;
+    height: auto;
+  }
 
-    .row {
-        flex-direction: column;
-    }
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
 
-    .img-01 {
-        margin-right: 0;
-    }
+  .row {
+    flex-direction: column;
+  }
 
-    .exclusives {
-        margin: 0;
+  .big-img {
+    width: 100%;
+    height: auto;
+  }
 
-    }
+  .img-01 {
+    margin-right: 0;
+  }
 
-    .footer-banner {
-        flex-direction: column;
-    }
+  .favorites {
+    margin: 0;
+  }
 
-    
+  .mini-container {
+    flex-direction: column;
+  }
 
+  .footer-banner {
+    flex-direction: column;
+  }
+
+  .container-footer {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .institucional,
+  .atendimento,
+  .confie {
+    padding: 10px;
+  }  
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  header .top-nav {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar nav a {
+    margin-right: 5px;
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .big-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .img-01 {
+    margin-right: 0;
+  }
+
+  .favorites {
+    margin: 0;
+  }
+
+  .mini-container {
+    flex-direction: column;
+  }
+
+  .footer-banner {
+    flex-direction: column;
+  }
+
+  .container-footer {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .institucional,
+  .atendimento,
+  .confie {
+    padding: 10px;
+  }
+
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .top-nav .container ul {
+    font-size: 14px;
+  }
+
+  header .top-nav .container li {
+    margin: 0px 17px;
+  }
+
+  .navbar {
+    padding: 20px;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+  }
+
+  .favorites {
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .img-01 {
+    margin-right: 0;
+  }
+
+  .exclusives {
+    margin: 0;
+  }
+
+  .footer-banner {
+    flex-direction: column;
+  }
+
+  .contentBox {
+    width: 300px;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .contentBox .imgBx {
+    height: 200px;
+    transform: translateY(-50px);
+  }
+
+  .contentBox .content {
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    padding-top: 0;
+  }
+
+  .close {
+    top: -50px;
+    right: -4px;
+    background: #fff url(./imgs/close.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    justify-content: space-evenly;
+  }
 }

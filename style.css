@@ -1,16 +1,15 @@
 :root {
-    --branco: #FFFFFF;
-    --cinza: #777777;
-    --laranja: #eda569;
-    --laranja-escuro: #ef6b00;
-    --amarelo: #fcbd24;
+  --branco: #ffffff;
+  --cinza: #777777;
+  --laranja: #eda569;
+  --laranja-escuro: #ef6b00;
+  --amarelo: #fcbd24;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
@@ -18,10 +17,10 @@ body {
 }
 
 header .top-nav {
-    padding: 10px;
-    background-color: var(--laranja);
-    color: var(--branco);
-  }
+  padding: 10px;
+  background-color: var(--laranja);
+  color: var(--branco);
+}
 
 header .top-nav .container {
   display: flex;
@@ -30,9 +29,9 @@ header .top-nav .container {
 }
 
 header .top-nav .container ul {
-    display: flex;
-    list-style-type: none;
-  }
+  display: flex;
+  list-style-type: none;
+}
 
 header .top-nav .container span {
   font-weight: 600;
@@ -64,7 +63,7 @@ header .top-nav .container li {
 
 .navbar nav a:hover {
   background-color: var(--amarelo);
-  color: white;  
+  color: white;
 }
 
 .icons img {
@@ -72,8 +71,8 @@ header .top-nav .container li {
 }
 
 .full-banner {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .favorites {
@@ -306,7 +305,7 @@ header .top-nav .container li {
 }
 
 .confie img {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .container hr {
